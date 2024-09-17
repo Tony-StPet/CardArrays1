@@ -1,15 +1,18 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+//    PlayingCard card1 = new PlayingCard();
+//    card1.suit= "пики";
+//    card1.rank ="валет";
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        PlayingCard card2 = new PlayingCard("бубны", "валет");
+        PlayingCard card3 = new PlayingCard("трефы", "дама");
+    System.out.println(card2.suit + " "+ card2.rank);
+
+PlayingCard [] m5 = CardArrayRoutines.InputArray(5);
+    CardArrayRoutines.printArray(m5);
+    //CardArrayRoutines.printArray(m3);
+    CardArrayRoutines.bubbleSort(m5);
+    CardArrayRoutines.printArray(m5);
+
     }
 }
